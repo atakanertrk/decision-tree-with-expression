@@ -1,6 +1,9 @@
+
+
 curl --location --request POST 'https://localhost:7233/api/expression/EvaluateOrderCsharpTree' \
 --header 'Content-Type: application/json' \
 --data-raw '{
+```json
     "expressionDefinitions": [
         {
             "expression": "int age = 16; bool isExsitingCustomer = true; string output; decimal limit = 1000;"
@@ -54,4 +57,7 @@ curl --location --request POST 'https://localhost:7233/api/expression/EvaluateOr
         "imports": [],
         "isLastNode": true
     }
+```
 }'
+
+
